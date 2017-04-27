@@ -1,0 +1,25 @@
+---
+title: "exercise 2"
+author: "cindy"
+date: "April 27, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+```
+
+
+
+```{r cars, echo=FALSE}
+Sys.setenv("plotly_username"="cnguyen0")
+Sys.setenv("plotly_api_key"="PlzTkec6Qq6y4UvilUtp")
+
+class <- as.vector(Titanic['class'])
+freq <- as.vector(Titanic['freq'])
+
+p <- plot_ly (x = as.vector(Titanic['freq']), y = as.vector(Titanic['freq']), type = 'bar')
+
+p
+```
